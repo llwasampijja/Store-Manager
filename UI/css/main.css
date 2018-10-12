@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body
+{
+	background-image:url(../images/supermarket.jpg);
+	/*background-repeat:no-repeat;*/
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size:auto;
+	background-size:auto;
+	position:relative;
+	margin:0;
+    padding:0;
+    height:100%;
+	overflow:auto;
+}
+
+.form {
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#welcome {
+  text-align: center;
+  color: #4169e1;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.button {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: rgb(65, 105, 225);
+  color: #ffffff;
+  display: block;
+  width: 100%;
+}
+
+.button:hover, .button:focus {
+  background: #0000ff;
+}
+
+.login-fields {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+label .asterik {
+  margin: 2px;
+  color: red;
+}
+
+label.active .asterik {
+  opacity: 0;
+}
+
+input {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 2px solid #4169e1;
+  color: #4169e1;
+  border-radius: 0;
+}
+
+input:focus{
+  outline: 0;
+  border-color: #000;
+}
