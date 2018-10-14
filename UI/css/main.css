@@ -140,7 +140,7 @@ ul li a {
   letter-spacing: .1em;
   margin: 10px;
   padding: 10px;
-  -webkit-appearance: menulist-button;
+ 
   height: 50px;
 }
 
@@ -237,6 +237,20 @@ input:focus{
   margin: 10px;
 }
 
+.search-textbox{
+  width: 75%;
+  padding:10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.textarea-short{
+  width: 200px;
+  padding:10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -251,4 +265,21 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+.total-sales-container {
+  display:inline-block;
+}
+
+.total-sales-label{
+  width: 200px;
+  float: left;
+  display: block;
+  padding:10px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.total-sales {
+  float: left;
 }
