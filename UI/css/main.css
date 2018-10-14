@@ -140,7 +140,7 @@ ul li a {
   letter-spacing: .1em;
   margin: 10px;
   padding: 10px;
- 
+  -webkit-appearance: menulist-button;
   height: 50px;
 }
 
@@ -272,7 +272,7 @@ tr:nth-child(even) {
 }
 
 .total-sales-label{
-  width: 200px;
+
   float: left;
   display: block;
   padding:10px;
@@ -282,4 +282,53 @@ tr:nth-child(even) {
 
 .total-sales {
   float: left;
+}
+
+.user-profile {
+  display:inline-block;
+}
+
+.profile-image{
+  width: 200px;
+  float: left;
+  display: block;
+  padding:10px;
+  margin: 10px;
+  font-weight: bold;
+  
+}
+
+.profile-image img{
+  width: 100%;
+ 
+ 
+}
+
+.profile-details {
+  float: left;
+  vertical-align: middle;
+  float: left;
+  display: block;
+  font-weight: bold;
+}
+
+.user-profile-value {
+  float: left;
+  width: 200px;
+  padding:0px;
+  margin: 10px;
+}
+
+
+.user-profile-detail{
+  text-align: left;
+  font-weight: normal;
+}
+
+.user-profile-label{
+  width: 200px;
+  float: left;
+  display: block;
+  padding: 0;
+  font-weight: bold;
 }
