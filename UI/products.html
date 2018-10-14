@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Products | Store Manager</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="page-wrapper">
+		<header>
+			<div class="app-header-wrapper">
+				<ul>
+					<li> <a href="user.html">My Account</a> </li>
+					<li> <a href="index.html"> Logout </a> </li>
+				</ul>
+			</div>
+
+		</header>
+
+		<header>
+			<div class="page-header-wrapper">
+				<h1>Store Manager</h1>
+			</div>
+
+		</header>
+
+		<div class="sidebar-right">
+			<nav>
+				<ul>
+					<li> <a href="products.html">Available Products</a> </li>
+					<li> <a href="product_categories.html">Products Categories</a> </li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
+			<h2> Available Products </h2>
+			<button class="button-small" onclick="location.href='index.html'">Add New Product</button>
+			<div class="filter-category">
+				<select>
+					<option value="all">All</option>
+					<option value="alcohol">Alcohol</option>
+					<option value="food">Food</option>
+					<option value="utencils">Utencils very long</option>
+				</select>
+				<button class="button-small">Filter by Categories</button>
+			</div>
+			<div>
+				<input type="text" placeholder="Search Products" id="search_products" />
+			</div>
+			<div class="products" id="products">
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">Tumpeco</p>
+					<p class="">UGX 500</p>
+					<p class="">5 Items</p>
+					<p class="">Utencils</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">Glass Plate</p>
+					<p class="">UGX 3,000</p>
+					<p class="">2 Items</p>
+					<p class="">Utencils</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">5Kg Rice</p>
+					<p class="">UGX 25,000</p>
+					<p class="">6 Items</p>
+					<p class="">Food</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">1Kg Bread</p>
+					<p class="">UGX 4,300</p>
+					<p class="">5 Items</p>
+					<p class="">Food</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">1 Dozen of Forks</p>
+					<p class="">UGX 10,000</p>
+					<p class="">12 Items</p>
+					<p class="">Utencils</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">500g Noodles</p>
+					<p class="">UGX 1000</p>
+					<p class="">32 Items</p>
+					<p class="">Food</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">1 Dozen of Spoons</p>
+					<p class="">UGX 10,000</p>
+					<p class="">7 Items</p>
+					<p class="">Utencils</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">I liter Soda</p>
+					<p class="">UGX 2,000</p>
+					<p class="">1 Items</p>
+					<p class="">food</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">Smirnoff Black</p>
+					<p class="">UGX 3,500</p>
+					<p class="">5 Items</p>
+					<p class="">Alcohol</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+				<div class="product_wrapper">
+					<img src="images/cart.jpg" />
+					<p class="">2 Ltrs Uganda Warage</p>
+					<p class="">UGX 20,000</p>
+					<p class="">3 Items</p>
+					<p class="">Alcohol</p>
+					<button class="button-small">Add to Cart</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.js"></script>
+</body>
+
+</html>
