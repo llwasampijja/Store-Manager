@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Stock Status | Store Manager</title>
+	<title>Inventory | Store Manager</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -34,13 +34,13 @@
 					<li> <a href="sales_records_all.html">All Sales Records</a> </li>
 					<li> <a href="add_product.html">Add Product</a> </li>
 					<li> <a href="add_user.html">Add User</a> </li>
-                    <li> <a href="store_attendants_list.html">Store Attendants</a> </li>
-                    <li> <a href="stock_view.html">Check Stock Status</a> </li>
+					<li> <a href="store_attendants_list.html">Store Attendants</a> </li>
+					<li> <a href="stock_view.html">Check Stock Status</a> </li>
 				</ul>
 			</nav>
 		</div>
 		<div id="content">
-			<h2> Stock Status </h2>
+			<h2> Inventory</h2>
 			<button class="button-small" onclick="location.href='index.html'">Add New Product</button>
 			<div class="filter-category">
 				<select>
@@ -52,79 +52,81 @@
 				<button class="button-small">Filter by Categories</button>
 			</div>
 			<div>
-				<input type="text" placeholder="Search Products" id="search_products" />
+				<input type="text" placeholder="Search Inventory" class="search-textbox search-sales" />
 			</div>
-			<div class="products" id="products">
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">Tumpeco</p>
-					<p class="">5 Items</p>
-					<p class="">Utencils</p>
-					<button class="button-small btn-add-cart" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">Glass Plate</p>
-					<p class="">2 Items</p>
-					<p class="">Utencils</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">5Kg Rice</p>
-					<p class="">6 Items</p>
-					<p class="">Food</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">1Kg Bread</p>
-					<p class="">5 Items</p>
-					<p class="">Food</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">1 Dozen of Forks</p>
-					<p class="">12 Items</p>
-					<p class="">Utencils</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">500g Noodles</p>
-					<p class="">32 Items</p>
-					<p class="">Food</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">1 Dozen of Spoons</p>
-					<p class="">7 Items</p>
-					<p class="">Utencils</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">I liter Soda</p>
-					<p class="">1 Items</p>
-					<p class="">food</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">Smirnoff Black</p>
-					<p class="">5 Items</p>
-					<p class="">Alcohol</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
-				<div class="product_wrapper">
-					<img src="images/cart.jpg" />
-					<p class="">2 Ltrs Uganda Warage</p>
-					<p class="">3 Items</p>
-					<p class="">Alcohol</p>
-					<button class="button-small" onclick="location.href='edit_product.html'">Edit Product</button>
-				</div>
+			<div class="categories table-container">
+				<table>
+					<tr>
+						<th>Index</th>
+						<th>Image</th>
+						<th>Name</th>
+						<th>Category</th>
+						<th>Unit Price</th>
+						<th>Stock Date</th>
+						<th>Quantity</th>
+						<th>Allowed Minimum Inventory</th>
+						<th>Modify Product</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>Tumpeco</td>
+						<td>Utencils</td>
+						<td>500</td>
+						<td>12th november 2018</td>
+						<td>22</td>
+						<td>5</td>
+						<td><button class="button-small" onclick="location.href='edit_product.html'">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>1 Dozen Spoons</td>
+						<td>Utencils</td>
+						<td>10000</td>
+						<td>11th november 2018</td>
+						<td>12</td>
+						<td>5</td>
+						<td><button class="button-small" onclick="location.href='edit_product.html'">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>500g Noodles</td>
+						<td>Food</td>
+						<td>1000</td>
+						<td>12th December 2018</td>
+						<td>100</td>
+						<td>20</td>
+						<td><button class="button-small" onclick="location.href='edit_product.html'">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>Smirnoff Black</td>
+						<td>Alcohol</td>
+						<td>3500</td>
+						<td>24th november 2018</td>
+						<td>250</td>
+						<td>50</td>
+						<td><button class="button-small" onclick="location.href='edit_product.html'">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>1 Ltr Soda</td>
+						<td>Food</td>
+						<td>2000</td>
+						<td>12th December 2018</td>
+						<td>288</td>
+						<td>72</td>
+						<td><button class="button-small" onclick="location.href='edit_product.html'">Edit</button></td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>

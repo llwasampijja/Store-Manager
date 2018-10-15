@@ -348,3 +348,7 @@ tr:nth-child(even) {
 .new-user-fields, .edit-user-fields, .new-product-fields {
   margin-top: 50px;
 }
+
+.image-table{
+  width: 50px;
+}
