@@ -5,17 +5,7 @@
     <meta charset="utf-8">
     <title>Edit/Delete Product | Store Manager</title>
     <link rel="stylesheet" href="css/main.css">
-
-    <script type="text/javascript">
-
-           function confirmDelete(){
-              var retVal = confirm("Do you really want to delete this Item?");
-              if( retVal == true ){
-                window.location.replace("stock_view.html");
-                 return true;
-              }
-           }
-     </script>
+    <script src="js/app.js"></script>
 </head>
 
 <body>
@@ -90,14 +80,12 @@
                 </div>
             </form>
             <div class="total-sales-container">
-                <button class="button-small" onclick="location.href='index.html'">Save Product Changes</button>
+                <button class="button-small" onclick="saveProductChanges()">Save Product Changes</button>
                 <button class="button-small" onclick="confirmDelete();">Delete Product</button>
             </div>
 
         </div>
     </div>
-
-    <script src="js/app.js"></script>
 </body>
 
 </html>
