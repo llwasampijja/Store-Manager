@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Sales Record | Store Manager</title>
+	<title>Cart | Store Manager</title>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -40,37 +40,21 @@
 			</nav>
 		</div>
 		<div id="content">
-			<h2> Total Sales </h2>
-			<div class="filter-category">
-				<select>
-					<option value="all">All</option>
-					<option value="alcohol">Alcohol</option>
-					<option value="food">Food</option>
-					<option value="utencils">Utencils very long</option>
-				</select>
-				<button class="button-small">Filter by Categories</button>
-			</div>
-			<div>
-				<input type="text" placeholder="Search Sales" class="search-textbox search-sales" />
-			</div>
+			<h2> Cart Items </h2>
 			<div class="categories table-container">
 				<table>
 					<tr>
 						<th>Index</th>
 						<th>Product</th>
-						<th>Category</th>
-						<th>Seller</th>
 						<th>Quantity</th>
 						<th>Unit Price</th>
-						<th>Total Sale</th>
-						<th>Date</th>
+						<th>Total Price</th>
+                        <th>Date</th>
 					</tr>
 					<tr>
 						<td>1</td>
 						<td>Tumpeco</td>
-						<td>Utencils</td>
-						<td>Jon Snow</td>
-						<td>2</td>
+						<td><input class="cart-product-fields-input" type="number" required autocomplete="on" placeholder="2" /></td>
 						<td>500</td>
 						<td>1000</td>
 						<td>12th november 2018</td>
@@ -78,9 +62,7 @@
 					<tr>
 						<td>2</td>
 						<td>1 Dozen Spoons</td>
-						<td>Utencils</td>
-						<td>Dall Kased</td>
-						<td>1</td>
+						<td><input class="cart-product-fields-input" type="number" required autocomplete="on" placeholder="1" /></td>
 						<td>10000</td>
 						<td>10000</td>
 						<td>11th november 2018</td>
@@ -88,9 +70,7 @@
 					<tr>
 						<td>3</td>
 						<td>500g Noodles</td>
-						<td>Food</td>
-						<td>No One</td>
-						<td>3</td>
+						<td><input class="cart-product-fields-input" type="number" required autocomplete="on" placeholder="3" /></td>
 						<td>1000</td>
 						<td>3000</td>
 						<td>12th December 2018</td>
@@ -98,9 +78,7 @@
 					<tr>
 						<td>4</td>
 						<td>Smirnoff Black</td>
-						<td>Alcohol</td>
-						<td>Dall Kased</td>
-						<td>4</td>
+						<td><input class="cart-product-fields-input" type="number" required autocomplete="on" placeholder="4" /></td>
 						<td>3500</td>
 						<td>14000</td>
 						<td>24th november 2018</td>
@@ -108,9 +86,7 @@
 					<tr>
 						<td>5</td>
 						<td>1 Ltr Soda</td>
-						<td>Food</td>
-						<td>No One</td>
-						<td>10</td>
+						<td><input class="cart-product-fields-input" type="number" required autocomplete="on" placeholder="10" /></td>
 						<td>2000</td>
 						<td>20000</td>
 						<td>12th December 2018</td>
@@ -123,11 +99,16 @@
 				</label>
 				<input class="total-sales textarea-short" value="20" readonly="readonly">
 				<label class="total-sales-label">
-					Total Sales
+					Total Bill
 				</label>
 				<input class="total-sales textarea-short" value="48000" readonly="readonly">
-			</div>
-		</div>
+            </div>
+            <div>
+                <button class="button-small" onclick="location.href='index.html'">Checkout</button>
+            </div>
+        </div>
+       
+
 	</div>
 
 	<script src="js/app.js"></script>

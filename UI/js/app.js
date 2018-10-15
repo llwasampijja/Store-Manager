@@ -1,7 +1,7 @@
-var e = document.getElementById("ddlViewBy");
-var strUser = e.options[e.selectedIndex].value;
+function deleteProductComfirm() {
+    confirm("Do you really want to delete this Item?");
+}
 
-if (strUser == "all"){
-    console.log("all items");
-    
+function deactivateAccountComfirm() {
+    confirm("Do you really want to deactivate this Account?");
 }

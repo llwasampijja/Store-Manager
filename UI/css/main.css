@@ -34,6 +34,10 @@ header {
   text-align: center;
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
 a:link{
 color: maroon;
 }
@@ -333,7 +337,7 @@ tr:nth-child(even) {
   font-weight: bold;
 }
 
-.new-user-fields-input {
+.new-user-fields-input, .edit-user-fields-input, .new-product-fields-input, .cart-product-fields-input {
   text-transform: capitalize;
   letter-spacing: .1em;
   color: #141313;
@@ -341,6 +345,6 @@ tr:nth-child(even) {
   width: 80%;
 }
 
-.new-user-fields {
+.new-user-fields, .edit-user-fields, .new-product-fields {
   margin-top: 50px;
 }
