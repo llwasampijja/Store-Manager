@@ -35,7 +35,7 @@
                     <li> <a href="add_product.html">Add Product</a> </li>
                     <li> <a href="add_user.html">Add User</a> </li>
                     <li> <a href="store_attendants_list.html">Store Attendants</a> </li>
-                    <li> <a href="stock_view.html">Check Stock Status</a> </li>
+                    <li> <a href="stock_view.html">Inventory</a> </li>
                 </ul>
             </nav>
         </div>
@@ -75,10 +75,16 @@
                     <label>
                         Quantity<span class="asterik">*</span>
                     </label>
-                    <input class="new-product-fields-input" type="number" required autocomplete="on" placeholder="Quantity" />
+                    <input class="new-product-fields-input" type="number" required autocomplete="on" placeholder="100" />
+                </div>
+                <div class="new-product-fields">
+                    <label>
+                        Allowed Minimum Inventory<span class="asterik">*</span>
+                    </label>
+                    <input class="new-product-fields-input" type="number" required autocomplete="on" placeholder="34" />
                 </div>
             </form>
-            <button class="button-small" onclick="location.href='index.html'">Add Product</button>
+            <button class="button-small" onclick="location.href='stock_view.html'">Add Product</button>
         </div>
     </div>
 
