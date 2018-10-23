@@ -32,8 +32,6 @@
                     <li> <a href="products.html">Available Products</a> </li>
                     <li> <a href="product_categories.html">Products Categories</a> </li>
                     <li> <a href="sales_records_all.html">All Sales Records</a> </li>
-                    <li> <a href="add_product.html">Add Product</a> </li>
-                    <li> <a href="add_user.html">Add User</a> </li>
                     <li> <a href="store_attendants_list.html">Store Attendants</a> </li>
                     <li> <a href="stock_view.html">Inventory</a> </li>
                 </ul>
@@ -59,21 +57,21 @@
                             <td>Dall</td>
                             <td>Kased</td>
                             <td>220,000</td>
-                            <td><button class="button-small" onclick="openUserProfilePage()">View Profile</button></td>
+                            <td><button class="button-small btn_view_user_details">View Profile</button></td>
                         </tr>
                         <tr>
                             <td>2</td>
                             <td>Ann</td>
                             <td>Night</td>
                             <td>1,000,000</td>
-                            <td><button class="button-small" onclick="openUserProfilePage()">View Profile</button></td>
+                            <td><button class="button-small btn_view_user_details">View Profile</button></td>
                         </tr>
                         <tr>
                             <td>3</td>
                             <td>No</td>
                             <td>One</td>
                             <td>435,550</td>
-                            <td><button class="button-small" onclick="openUserProfilePage()">View Profile</button></td>
+                            <td><button class="button-small btn_view_user_details">View Profile</button></td>
                         </tr>
                     </table>
                 </div>
@@ -84,13 +82,207 @@
                     <input class="textarea-short" value="3" readonly="readonly">
                 </div>
                 <div>
-                        <button class="button-small" onclick="addNewStoreAttendant()">Add Store Attendant</button>
+                    <button id="btn_add_user_modal" class="button-small">Add Store
+                        Attendant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add User Modal View -->
+    <div id="add_user_modal" class="modal">
+        <!-- Modal contents/user inputs -->
+        <div class="modal_content">
+            <span class="close">&times;</span>
+            <div class="add_user_modal_view">
+                <p>Enter User Details</p>
+                <form action="" method="post">
+                    <input type="text" required placeholder="User ID No.">
+                    <input type="text" required placeholder="First Name">
+                    <input type="text" required placeholder="Last Name">
+                    <input type="text" required placeholder="Username">
+                    <div>
+                        <label>
+                            Add Product Image
+                        </label>
+                        <input type="file" name="pic" required accept="image/*" />
                     </div>
+                    <input type="tel" pattern="[0-9]{10}" required placeholder="Contact">
+                    <input type="text" required placeholder="Address">
+                    <input type="text" required placeholder="Next of Kin Name">
+                    <input type="tel" pattern="[0-9]{10}" required placeholder="Next of Kin Contact">
+                    <input type="date" required placeholder="Date of Joining">
+                    <input type="password" required placeholder="Password">
+                    <input type="password" required placeholder="Confirm Password">
+                    <input type="submit" class="button-small">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add User Modal View -->
+    <div id="model_user_details" class="modal">
+        <!-- Modal contents/user inputs -->
+        <div>
+            <div class="add_user_modal_view">
+                <div id="content">
+                    <span class="close">&times;</span>
+                    <div class="user-profile">
+                        <h2> Profile </h2>
+                        <header class="profile-header">
+                            <div class="profile-image">
+                                <img src="images/ann.jpg" />
+                            </div>
+                            <div class="profile-details ">
+                                <p>
+                                    <div class="total-sales-container user-profile-detail">
+                                        <label class="total-sales-label user-profile-label">
+                                            Name:
+                                        </label>
+                                        <p class="total-sales textarea-short user-profile-value">Ann Night</p>
+                                    </div>
+                                </p>
+
+                                <p>
+                                    <div class="total-sales-container user-profile-detail">
+                                        <label class="total-sales-label user-profile-label">
+                                            Contact Phone Number:
+                                        </label>
+                                        <p class="total-sales textarea-short user-profile-value">0715575937</p>
+                                    </div>
+                                </p>
+
+                                <p>
+                                    <div class="total-sales-container user-profile-detail">
+                                        <label class="total-sales-label user-profile-label">
+                                            Place of Residence:
+                                        </label>
+                                        <p class="total-sales textarea-short user-profile-value">Mbajja Ntanzi</p>
+                                    </div>
+                                </p>
+
+                                <p>
+                                    <div class="total-sales-container user-profile-detail">
+                                        <label class="total-sales-label user-profile-label">
+                                            Been an Emplyee since:
+                                        </label>
+                                        <p class="total-sales textarea-short user-profile-value">12th August 2024</p>
+                                    </div>
+                                </p>
+                                <p>
+                                    <div class="total-sales-container user-profile-detail">
+                                        <label class="total-sales-label user-profile-label">
+                                            Next of Kin:
+                                        </label>
+                                        <p class="total-sales textarea-short user-profile-value">Edward Army</p>
+                                    </div>
+                                </p>
+
+                                <p>
+                                    <div class="total-sales-container user-profile-detail">
+                                        <label class="total-sales-label user-profile-label">
+                                            Next of Kin Contact:
+                                        </label>
+                                        <p class="total-sales textarea-short user-profile-value">0794961853</p>
+                                    </div>
+                                </p>
+                            </div>
+                            <button id="btn_edit_profile" class="button-small">Edit Profile</button>
+                        </header>
+                    </div>
+                    <div>
+                        <button class="button-small">Make Admin</button>
+                        <div class="filter-category">
+                            <select>
+                                <option value="all">All</option>
+                                <option value="alcohol">Alcohol</option>
+                                <option value="food">Food</option>
+                                <option value="utencils">Utencils very long</option>
+                            </select>
+                            <button class="button-small">Filter by Categories</button>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Search Sales" class="search-textbox search-sales" />
+                        </div>
+                        <div class="categories table-container">
+                            <table>
+                                <tr>
+                                    <th>Index</th>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Quantity</th>
+                                    <th>Price @</th>
+                                    <th>Total Sale</th>
+                                    <th>Date</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Tumpeco</td>
+                                    <td>Utencils</td>
+                                    <td>2</td>
+                                    <td>500</td>
+                                    <td>1000</td>
+                                    <td>12th november 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>1 Dozen Spoons</td>
+                                    <td>Utencils</td>
+                                    <td>1</td>
+                                    <td>10000</td>
+                                    <td>10000</td>
+                                    <td>11th november 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>500g Noodles</td>
+                                    <td>Food</td>
+                                    <td>3</td>
+                                    <td>1000</td>
+                                    <td>3000</td>
+                                    <td>12th December 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Smirnoff Black</td>
+                                    <td>Alcohol</td>
+                                    <td>4</td>
+                                    <td>3500</td>
+                                    <td>14000</td>
+                                    <td>24th november 2018</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>1 Ltr Soda</td>
+                                    <td>Food</td>
+                                    <td>10</td>
+                                    <td>2000</td>
+                                    <td>20000</td>
+                                    <td>12th December 2018</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="total-sales-container">
+                            <label class="total-sales-label">
+                                Total No of Items Sold
+                            </label>
+                            <input class="total-sales textarea-short" value="20" readonly="readonly">
+                            <label class="total-sales-label">
+                                Total Sales
+                            </label>
+                            <input class="total-sales textarea-short" value="48000" readonly="readonly">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="js/app.js"></script>
+    <script type="text/javascript">
+        runAllJavaScript();
+    </script>
+
+
 </body>
 
 </html>

@@ -32,8 +32,6 @@
 					<li> <a href="products.html">Available Products</a> </li>
 					<li> <a href="product_categories.html">Products Categories</a> </li>
 					<li> <a href="sales_records_all.html">All Sales Records</a> </li>
-					<li> <a href="add_product.html">Add Product</a> </li>
-					<li> <a href="add_user.html">Add User</a> </li>
 					<li> <a href="store_attendants_list.html">Store Attendants</a> </li>
 					<li> <a href="stock_view.html">Inventory</a> </li>
 				</ul>
@@ -41,7 +39,7 @@
 		</div>
 		<div id="content">
 			<h2> Product Categories </h2>
-			<button class="button-small" onclick="launchAddNewCategoryPage()">Add New Category</button>
+			<button  id="btn_add_category_modal" class="button-small">Add New Category</button>
 			<div>
 				<input type="text" placeholder="Search Category" id="search_products" />
 			</div>
@@ -68,7 +66,25 @@
 		</div>
 	</div>
 
+<!-- Add Category Modal View -->
+	<div id="add_category_modal" class="modal">
+		<!-- Modal contents/category inputs -->
+		<div class="modal_content">
+			<span class="close">&times;</span>
+			<div class="add_category_modal_view">
+				<p>Enter Category Details</p>
+				<form action="" method="post">
+					<input type="number" required placeholder="Category ID">
+					<input type="text" required placeholder="Category Name">
+					<input type="submit" class="button-small">
+				</form>
+			</div>
+		</div>
+	</div>
 	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		openCategoryAddModal();
+	</script>
 </body>
 
 </html>
