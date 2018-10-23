@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Inventory | Store Manager</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="page-wrapper">
+		<header>
+			<div class="app-header-wrapper">
+				<ul>
+					<li> <a href="user.html">My Account</a> </li>
+					<li> <a href="index.html"> Logout </a> </li>
+				</ul>
+			</div>
+
+		</header>
+
+		<header>
+			<div class="page-header-wrapper">
+				<h1>Store Manager</h1>
+			</div>
+
+		</header>
+
+		<div class="sidebar-right">
+			<nav>
+				<ul>
+					<li> <a href="products.html">Available Products</a> </li>
+					<li> <a href="product_categories.html">Products Categories</a> </li>
+					<li> <a href="sales_records_all.html">All Sales Records</a> </li>
+					<li> <a href="store_attendants_list.html">Store Attendants</a> </li>
+					<li> <a href="stock_view.html">Inventory</a> </li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
+			<h2> Inventory</h2>
+			<button  id="btn_add_product_modal" class="button-small">Add New Product</button>
+			<div class="filter-category">
+				<select>
+					<option value="all">All</option>
+					<option value="alcohol">Alcohol</option>
+					<option value="food">Food</option>
+					<option value="utencils">Utencils very long</option>
+				</select>
+				<button class="button-small">Filter by Categories</button>
+			</div>
+			<div>
+				<input type="text" placeholder="Search Inventory" class="search-textbox search-sales" />
+			</div>
+			<div class="categories table-container">
+				<table>
+					<tr>
+						<th>Index</th>
+						<th>Image</th>
+						<th>Name</th>
+						<th>Category</th>
+						<th>Unit Price</th>
+						<th>Stock Date</th>
+						<th>Quantity</th>
+						<th>Allowed Minimum Inventory</th>
+						<th>Modify Product</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>Tumpeco</td>
+						<td>Utencils</td>
+						<td>500</td>
+						<td>12th november 2018</td>
+						<td>22</td>
+						<td>5</td>
+						<td><button class="button-small" onclick="launchEditProductPage()">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>1 Dozen Spoons</td>
+						<td>Utencils</td>
+						<td>10000</td>
+						<td>11th november 2018</td>
+						<td>12</td>
+						<td>5</td>
+						<td><button class="button-small" onclick="launchEditProductPage()">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>500g Noodles</td>
+						<td>Food</td>
+						<td>1000</td>
+						<td>12th December 2018</td>
+						<td>100</td>
+						<td>20</td>
+						<td><button class="button-small" onclick="launchEditProductPage()">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>Smirnoff Black</td>
+						<td>Alcohol</td>
+						<td>3500</td>
+						<td>24th november 2018</td>
+						<td>250</td>
+						<td>50</td>
+						<td><button class="button-small" onclick="launchEditProductPage()">Edit</button></td>
+
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><img src="images/cart.jpg" class="image-table" /> </td>
+						<td>1 Ltr Soda</td>
+						<td>Food</td>
+						<td>2000</td>
+						<td>12th December 2018</td>
+						<td>288</td>
+						<td>72</td>
+						<td><button class="button-small" onclick="launchEditProductPage()">Edit</button></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+	<!-- Add Product Modal View -->
+	<div id="add_product_modal" class="modal">
+		<!-- Modal contents/product inputs -->
+		<div class="modal_content">
+			<span class="close">&times;</span>
+			<div class="add_product_modal_view">
+				<p>Enter Product Details</p>
+				<form action="" method="post">
+					<input type="number" required placeholder="Product ID">
+					<div>
+						<label>
+							Add Product Image
+						</label>
+						<input type="file" name="pic"  required accept="image/*" />
+					</div>
+					<input type="text" required placeholder="Product Name">
+					<div class="div_category">
+						<label>
+							Category
+						</label>
+						<select>
+							<option value="alcohol">Alcohol</option>
+							<option value="food">Food</option>
+							<option value="utencils">Utencils very long</option>
+						</select>
+					</div>
+					<input type="date" required placeholder="Stock Date">
+					<input type="number" required placeholder="Unit Price">
+					<input type="number" required placeholder="Quantity">
+					<input type="number" required placeholder="Acceptable Minimum">
+					<input type="submit" class="button-small">
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		openProductAddModal();
+	</script>
+</body>
+
+</html>

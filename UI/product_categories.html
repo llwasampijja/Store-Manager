@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Product Categories | Store Manager</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div id="page-wrapper">
+		<header>
+			<div class="app-header-wrapper">
+				<ul>
+					<li> <a href="user.html">My Account</a> </li>
+					<li> <a href="index.html"> Logout </a> </li>
+				</ul>
+			</div>
+
+		</header>
+
+		<header>
+			<div class="page-header-wrapper">
+				<h1>Store Manager</h1>
+			</div>
+
+		</header>
+
+		<div class="sidebar-right">
+			<nav>
+				<ul>
+					<li> <a href="products.html">Available Products</a> </li>
+					<li> <a href="product_categories.html">Products Categories</a> </li>
+					<li> <a href="sales_records_all.html">All Sales Records</a> </li>
+					<li> <a href="store_attendants_list.html">Store Attendants</a> </li>
+					<li> <a href="stock_view.html">Inventory</a> </li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content">
+			<h2> Product Categories </h2>
+			<button  id="btn_add_category_modal" class="button-small">Add New Category</button>
+			<div>
+				<input type="text" placeholder="Search Category" id="search_products" />
+			</div>
+			<div class="categories">
+				<table>
+					<tr>
+						<th>Category Name</th>
+						<th>No. of Products</th>
+					</tr>
+					<tr>
+						<td>Alcohol</td>
+						<td>2</td>
+					</tr>
+					<tr>
+						<td>Food</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>Utencils</td>
+						<td>4</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+<!-- Add Category Modal View -->
+	<div id="add_category_modal" class="modal">
+		<!-- Modal contents/category inputs -->
+		<div class="modal_content">
+			<span class="close">&times;</span>
+			<div class="add_category_modal_view">
+				<p>Enter Category Details</p>
+				<form action="" method="post">
+					<input type="number" required placeholder="Category ID">
+					<input type="text" required placeholder="Category Name">
+					<input type="submit" class="button-small">
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+	<script type="text/javascript">
+		openCategoryAddModal();
+	</script>
+</body>
+
+</html>
